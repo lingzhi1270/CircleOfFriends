@@ -9,6 +9,8 @@
 #import "CircleOfFriendsViewController.h"
 #import "TopPathCover.h"
 #import "PhotographyHelper.h"
+#import "AlbumOperationView.h"
+
 
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 
@@ -21,15 +23,18 @@
  */
 @property (nonatomic,strong)TopPathCover *albumHeaderContainerViewPathCover;
 
+//点击进相册  改背景
 @property (nonatomic,strong)PhotographyHelper *photographyHelper;
 
+//评论
+@property(nonatomic,strong)AlbumOperationView *albumOperationView;
 
 
 @end
 
 @implementation CircleOfFriendsViewController
 
-
+#pragma mark- getter
 - (TopPathCover *)albumHeaderContainerViewPathCover
 {
     if (_albumHeaderContainerViewPathCover == nil) {
@@ -84,6 +89,24 @@
     return _photographyHelper;
 }
 
+- (AlbumOperationView *)albumOperationView
+{
+    if (_albumOperationView == nil) {
+        _albumOperationView  = [AlbumOperationView initailzerAlbumOperationView];
+        WEAKSELF
+        _albumOperationView.didSelectedOperationCompleted = ^(AlbumOperationType *operationType){
+            
+            
+            
+            
+            
+        };
+        
+        
+    }
+    return _albumOperationView;
+}
+
 
 - (UITableView *)circleTab
 {
@@ -117,7 +140,7 @@
 #pragma mark- UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
+
     return 100;
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0781F571DC9846200E07B2A /* AlbumOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0781F561DC9846200E07B2A /* AlbumOperationView.m */; };
 		A09D4A2D1DC73AB800DFD3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09D4A2C1DC73AB800DFD3A8 /* main.m */; };
 		A09D4A301DC73AB800DFD3A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09D4A2F1DC73AB800DFD3A8 /* AppDelegate.m */; };
 		A09D4A331DC73AB900DFD3A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09D4A321DC73AB900DFD3A8 /* ViewController.m */; };
@@ -31,6 +32,9 @@
 		A0F1CA4D1DC87DB800FA4BE6 /* zgr.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F1CA4C1DC87DB800FA4BE6 /* zgr.png */; };
 		A0F1CA4F1DC87E6100FA4BE6 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F1CA4E1DC87E6100FA4BE6 /* avatar.png */; };
 		A0F1CA531DC8916400FA4BE6 /* PhotographyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F1CA521DC8916400FA4BE6 /* PhotographyHelper.m */; };
+		A0F608FE1DC9BDE20001AC4F /* CircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F608FD1DC9BDE20001AC4F /* CircleTableViewCell.m */; };
+		A0F609011DC9C2920001AC4F /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F609001DC9C2920001AC4F /* Album.m */; };
+		A0F609041DC9DEA70001AC4F /* AlbumRichTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F609031DC9DEA70001AC4F /* AlbumRichTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0781F551DC9846200E07B2A /* AlbumOperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumOperationView.h; sourceTree = "<group>"; };
+		A0781F561DC9846200E07B2A /* AlbumOperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumOperationView.m; sourceTree = "<group>"; };
 		A09D4A281DC73AB700DFD3A8 /* CircleOfFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleOfFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09D4A2C1DC73AB800DFD3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A09D4A2E1DC73AB800DFD3A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +95,12 @@
 		A0F1CA4E1DC87E6100FA4BE6 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		A0F1CA511DC8916400FA4BE6 /* PhotographyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotographyHelper.h; sourceTree = "<group>"; };
 		A0F1CA521DC8916400FA4BE6 /* PhotographyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotographyHelper.m; sourceTree = "<group>"; };
+		A0F608FC1DC9BDE20001AC4F /* CircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTableViewCell.h; sourceTree = "<group>"; };
+		A0F608FD1DC9BDE20001AC4F /* CircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTableViewCell.m; sourceTree = "<group>"; };
+		A0F608FF1DC9C2920001AC4F /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		A0F609001DC9C2920001AC4F /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		A0F609021DC9DEA70001AC4F /* AlbumRichTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumRichTextView.h; sourceTree = "<group>"; };
+		A0F609031DC9DEA70001AC4F /* AlbumRichTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumRichTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0781F581DC9846E00E07B2A /* AlbumOperationView */ = {
+			isa = PBXGroup;
+			children = (
+				A0781F551DC9846200E07B2A /* AlbumOperationView.h */,
+				A0781F561DC9846200E07B2A /* AlbumOperationView.m */,
+			);
+			name = AlbumOperationView;
+			sourceTree = "<group>";
+		};
 		A09D4A1F1DC73AB700DFD3A8 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +167,13 @@
 				A09D4A321DC73AB900DFD3A8 /* ViewController.m */,
 				A0F1CA3E1DC83B2F00FA4BE6 /* CircleOfFriendsViewController.h */,
 				A0F1CA3F1DC83B2F00FA4BE6 /* CircleOfFriendsViewController.m */,
+				A0F608FC1DC9BDE20001AC4F /* CircleTableViewCell.h */,
+				A0F608FD1DC9BDE20001AC4F /* CircleTableViewCell.m */,
+				A0F609021DC9DEA70001AC4F /* AlbumRichTextView.h */,
+				A0F609031DC9DEA70001AC4F /* AlbumRichTextView.m */,
+				A0F608FF1DC9C2920001AC4F /* Album.h */,
+				A0F609001DC9C2920001AC4F /* Album.m */,
+				A0781F581DC9846E00E07B2A /* AlbumOperationView */,
 				A0F1CA541DC8935A00FA4BE6 /* PhotographyHelper */,
 				A0F1CA501DC8913900FA4BE6 /* TopPathCover */,
 				A09D4A5E1DC7449300DFD3A8 /* CustomCell.h */,
@@ -365,11 +393,15 @@
 				A0F1CA531DC8916400FA4BE6 /* PhotographyHelper.m in Sources */,
 				A0F1CA431DC86E9600FA4BE6 /* TopPathCover.m in Sources */,
 				A09D4A331DC73AB900DFD3A8 /* ViewController.m in Sources */,
+				A0F609011DC9C2920001AC4F /* Album.m in Sources */,
 				A09D4A301DC73AB800DFD3A8 /* AppDelegate.m in Sources */,
+				A0F609041DC9DEA70001AC4F /* AlbumRichTextView.m in Sources */,
+				A0781F571DC9846200E07B2A /* AlbumOperationView.m in Sources */,
 				A0F1CA461DC871B900FA4BE6 /* WaterDropRefresh.m in Sources */,
 				A0F1CA401DC83B2F00FA4BE6 /* CircleOfFriendsViewController.m in Sources */,
 				A0F1CA491DC8731900FA4BE6 /* SoundManager.m in Sources */,
 				A09D4A611DC7449300DFD3A8 /* CustomCell.m in Sources */,
+				A0F608FE1DC9BDE20001AC4F /* CircleTableViewCell.m in Sources */,
 				A09D4A2D1DC73AB800DFD3A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
