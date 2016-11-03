@@ -101,16 +101,16 @@
     self.frame = CGRectMake(targetRect.origin.x, targetRect.origin.y-AlbumSpatorY, 0, height);
     self.shouldShowed = YES;
     
-    [UIView animateWithDuration:0.2 animations:^{
-        
-        self.frame = CGRectMake(targetRect.origin.x, targetRect.origin.y-AlbumSpatorY, width, height);
-        
-    } completion:^(BOOL finished) {
     
+    //设置评论框的弹出方向
+    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    
+         self.frame = CGRectMake(targetRect.origin.x-width, targetRect.origin.y-AlbumSpatorY, width, height);
+    } completion:^(BOOL finished) {
         [_replyButton setTitle:@"评论" forState:UIControlStateNormal];
         [_likeButton setTitle:@"赞" forState:UIControlStateNormal];
-        
     }];
+
 }
 
 

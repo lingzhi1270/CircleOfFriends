@@ -176,6 +176,8 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
+    [self.view addSubview:self.sendMessageView];
+    
     
     [self.view addSubview:self.circleTab];
     
@@ -232,9 +234,6 @@
         });
         
     });
-    
-    
-    
 }
 
 
@@ -247,10 +246,20 @@
 #pragma mark - CircleTableViewCellDelegate
 - (void)didShowOperationView:(UIButton *)sender indexPath:(NSIndexPath *)indexPath
 {
+    //rectForRowAtIndexPath:
+    CGRect rectInTableView = [self.circleTab rectForRowAtIndexPath:indexPath];
+    CGFloat origin_Y = rectInTableView.origin.y + sender.frame.origin.y;
 
+    CGRect targetRect = CGRectMake(CGRectGetMinX(sender.frame), origin_Y, CGRectGetWidth(sender.bounds), CGRectGetHeight(sender.bounds));
+    if (self.albumOperationView.shouldShowed) {
+        [self.albumOperationView dismiss];
+        return;
+    }
+    
+    self.selectedIndexPath = indexPath;
+    [self.albumOperationView showAtView:self.circleTab rect:targetRect];
     
     
-
 }
 
 
