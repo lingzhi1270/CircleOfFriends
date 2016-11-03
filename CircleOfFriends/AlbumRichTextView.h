@@ -7,17 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SETextView.h"
 #import "Album.h"
 typedef void(^CommentButtonDidSelectedBlock)(UIButton *sender);
 
 @interface AlbumRichTextView : UIView
 @property (nonatomic, strong) NSFont *font;
-@property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) NSColor *textColor;
 @property (nonatomic, assign) NSTextAlignment textAlignment;
 @property (nonatomic, assign) CGFloat lineSpacing;
 
-//@property (nonatomic, strong) SETextView *richTextView;
+@property (nonatomic, strong) SETextView *richTextView;
 
 @property (nonatomic, strong) Album *displayAlbum;
 

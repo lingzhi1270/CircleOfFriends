@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05647EE1DCACBBB00448E70 /* AlbumLikesCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */; };
+		A05647F01DCACFE000448E70 /* Album_like_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A05647EF1DCACFE000448E70 /* Album_like_icon@2x.png */; };
+		A05647F21DCACFF900448E70 /* Album_likes_comments_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A05647F11DCACFF900448E70 /* Album_likes_comments_background@2x.png */; };
+		A056483F1DCAE7C900448E70 /* SECompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648221DCAE7C900448E70 /* SECompatibility.m */; };
+		A05648401DCAE7C900448E70 /* SEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648241DCAE7C900448E70 /* SEConstants.m */; };
+		A05648411DCAE7C900448E70 /* SELineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648261DCAE7C900448E70 /* SELineLayout.m */; };
+		A05648421DCAE7C900448E70 /* SELinkText.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648281DCAE7C900448E70 /* SELinkText.m */; };
+		A05648431DCAE7C900448E70 /* SESelectionGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = A056482A1DCAE7C900448E70 /* SESelectionGrabber.m */; };
+		A05648441DCAE7C900448E70 /* SETextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A056482C1DCAE7C900448E70 /* SETextAttachment.m */; };
+		A05648451DCAE7C900448E70 /* SETextEditingCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = A056482E1DCAE7C900448E70 /* SETextEditingCaret.m */; };
+		A05648461DCAE7C900448E70 /* SETextGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648301DCAE7C900448E70 /* SETextGeometry.m */; };
+		A05648471DCAE7C900448E70 /* SETextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648321DCAE7C900448E70 /* SETextInput.m */; };
+		A05648481DCAE7C900448E70 /* SETextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648341DCAE7C900448E70 /* SETextLayout.m */; };
+		A05648491DCAE7C900448E70 /* SETextMagnifierCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648361DCAE7C900448E70 /* SETextMagnifierCaret.m */; };
+		A056484A1DCAE7C900448E70 /* SETextMagnifierRanged.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648381DCAE7C900448E70 /* SETextMagnifierRanged.m */; };
+		A056484B1DCAE7C900448E70 /* SETextSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = A056483A1DCAE7C900448E70 /* SETextSelection.m */; };
+		A056484C1DCAE7C900448E70 /* SETextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A056483C1DCAE7C900448E70 /* SETextSelectionView.m */; };
+		A056484D1DCAE7C900448E70 /* SETextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A056483E1DCAE7C900448E70 /* SETextView.m */; };
+		A05648501DCAE8C500448E70 /* MessageAvatarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A056484F1DCAE8C500448E70 /* MessageAvatarFactory.m */; };
+		A05648531DCAE94500448E70 /* UIImage+Rounded.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648521DCAE94500448E70 /* UIImage+Rounded.m */; };
+		A05648561DCAEB7F00448E70 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648551DCAEB7F00448E70 /* BaseCollectionViewCell.m */; };
+		A05648591DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648581DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.m */; };
+		A05648661DCAEDCA00448E70 /* XHViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648621DCAEDCA00448E70 /* XHViewState.m */; };
+		A05648671DCAEDCA00448E70 /* XHZoomingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648641DCAEDCA00448E70 /* XHZoomingImageView.m */; };
+		A056486A1DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648691DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.m */; };
+		A056486D1DCB111600448E70 /* XHImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = A056486C1DCB111600448E70 /* XHImageViewer.m */; };
+		A05648711DCB1B1D00448E70 /* SendMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648701DCB1B1D00448E70 /* SendMessageView.m */; };
+		A05648751DCB2A7700448E70 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A05648741DCB2A7700448E70 /* StoreManager.m */; };
 		A0781F571DC9846200E07B2A /* AlbumOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0781F561DC9846200E07B2A /* AlbumOperationView.m */; };
 		A09D4A2D1DC73AB800DFD3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09D4A2C1DC73AB800DFD3A8 /* main.m */; };
 		A09D4A301DC73AB800DFD3A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09D4A2F1DC73AB800DFD3A8 /* AppDelegate.m */; };
@@ -55,6 +83,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A05647EC1DCACBBB00448E70 /* AlbumLikesCommentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumLikesCommentsView.h; sourceTree = "<group>"; };
+		A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumLikesCommentsView.m; sourceTree = "<group>"; };
+		A05647EF1DCACFE000448E70 /* Album_like_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Album_like_icon@2x.png"; sourceTree = "<group>"; };
+		A05647F11DCACFF900448E70 /* Album_likes_comments_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Album_likes_comments_background@2x.png"; sourceTree = "<group>"; };
+		A05648211DCAE7C900448E70 /* SECompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECompatibility.h; sourceTree = "<group>"; };
+		A05648221DCAE7C900448E70 /* SECompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECompatibility.m; sourceTree = "<group>"; };
+		A05648231DCAE7C900448E70 /* SEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEConstants.h; sourceTree = "<group>"; };
+		A05648241DCAE7C900448E70 /* SEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEConstants.m; sourceTree = "<group>"; };
+		A05648251DCAE7C900448E70 /* SELineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELineLayout.h; sourceTree = "<group>"; };
+		A05648261DCAE7C900448E70 /* SELineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELineLayout.m; sourceTree = "<group>"; };
+		A05648271DCAE7C900448E70 /* SELinkText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELinkText.h; sourceTree = "<group>"; };
+		A05648281DCAE7C900448E70 /* SELinkText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELinkText.m; sourceTree = "<group>"; };
+		A05648291DCAE7C900448E70 /* SESelectionGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESelectionGrabber.h; sourceTree = "<group>"; };
+		A056482A1DCAE7C900448E70 /* SESelectionGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESelectionGrabber.m; sourceTree = "<group>"; };
+		A056482B1DCAE7C900448E70 /* SETextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextAttachment.h; sourceTree = "<group>"; };
+		A056482C1DCAE7C900448E70 /* SETextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextAttachment.m; sourceTree = "<group>"; };
+		A056482D1DCAE7C900448E70 /* SETextEditingCaret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextEditingCaret.h; sourceTree = "<group>"; };
+		A056482E1DCAE7C900448E70 /* SETextEditingCaret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextEditingCaret.m; sourceTree = "<group>"; };
+		A056482F1DCAE7C900448E70 /* SETextGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextGeometry.h; sourceTree = "<group>"; };
+		A05648301DCAE7C900448E70 /* SETextGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextGeometry.m; sourceTree = "<group>"; };
+		A05648311DCAE7C900448E70 /* SETextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextInput.h; sourceTree = "<group>"; };
+		A05648321DCAE7C900448E70 /* SETextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextInput.m; sourceTree = "<group>"; };
+		A05648331DCAE7C900448E70 /* SETextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextLayout.h; sourceTree = "<group>"; };
+		A05648341DCAE7C900448E70 /* SETextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextLayout.m; sourceTree = "<group>"; };
+		A05648351DCAE7C900448E70 /* SETextMagnifierCaret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextMagnifierCaret.h; sourceTree = "<group>"; };
+		A05648361DCAE7C900448E70 /* SETextMagnifierCaret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextMagnifierCaret.m; sourceTree = "<group>"; };
+		A05648371DCAE7C900448E70 /* SETextMagnifierRanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextMagnifierRanged.h; sourceTree = "<group>"; };
+		A05648381DCAE7C900448E70 /* SETextMagnifierRanged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextMagnifierRanged.m; sourceTree = "<group>"; };
+		A05648391DCAE7C900448E70 /* SETextSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextSelection.h; sourceTree = "<group>"; };
+		A056483A1DCAE7C900448E70 /* SETextSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextSelection.m; sourceTree = "<group>"; };
+		A056483B1DCAE7C900448E70 /* SETextSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextSelectionView.h; sourceTree = "<group>"; };
+		A056483C1DCAE7C900448E70 /* SETextSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextSelectionView.m; sourceTree = "<group>"; };
+		A056483D1DCAE7C900448E70 /* SETextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETextView.h; sourceTree = "<group>"; };
+		A056483E1DCAE7C900448E70 /* SETextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETextView.m; sourceTree = "<group>"; };
+		A056484E1DCAE8C500448E70 /* MessageAvatarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAvatarFactory.h; sourceTree = "<group>"; };
+		A056484F1DCAE8C500448E70 /* MessageAvatarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAvatarFactory.m; sourceTree = "<group>"; };
+		A05648511DCAE94500448E70 /* UIImage+Rounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rounded.h"; sourceTree = "<group>"; };
+		A05648521DCAE94500448E70 /* UIImage+Rounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rounded.m"; sourceTree = "<group>"; };
+		A05648541DCAEB7F00448E70 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		A05648551DCAEB7F00448E70 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		A05648571DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		A05648581DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		A05648611DCAEDCA00448E70 /* XHViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHViewState.h; sourceTree = "<group>"; };
+		A05648621DCAEDCA00448E70 /* XHViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHViewState.m; sourceTree = "<group>"; };
+		A05648631DCAEDCA00448E70 /* XHZoomingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHZoomingImageView.h; sourceTree = "<group>"; };
+		A05648641DCAEDCA00448E70 /* XHZoomingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHZoomingImageView.m; sourceTree = "<group>"; };
+		A05648681DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A05648691DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A056486B1DCB111600448E70 /* XHImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHImageViewer.h; sourceTree = "<group>"; };
+		A056486C1DCB111600448E70 /* XHImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHImageViewer.m; sourceTree = "<group>"; };
+		A056486F1DCB1B1D00448E70 /* SendMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageView.h; sourceTree = "<group>"; };
+		A05648701DCB1B1D00448E70 /* SendMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageView.m; sourceTree = "<group>"; };
+		A05648731DCB2A7700448E70 /* StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
+		A05648741DCB2A7700448E70 /* StoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
 		A0781F551DC9846200E07B2A /* AlbumOperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumOperationView.h; sourceTree = "<group>"; };
 		A0781F561DC9846200E07B2A /* AlbumOperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumOperationView.m; sourceTree = "<group>"; };
 		A09D4A281DC73AB700DFD3A8 /* CircleOfFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleOfFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +210,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A05648201DCAE7C900448E70 /* SECoreTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A05648211DCAE7C900448E70 /* SECompatibility.h */,
+				A05648221DCAE7C900448E70 /* SECompatibility.m */,
+				A05648231DCAE7C900448E70 /* SEConstants.h */,
+				A05648241DCAE7C900448E70 /* SEConstants.m */,
+				A05648251DCAE7C900448E70 /* SELineLayout.h */,
+				A05648261DCAE7C900448E70 /* SELineLayout.m */,
+				A05648271DCAE7C900448E70 /* SELinkText.h */,
+				A05648281DCAE7C900448E70 /* SELinkText.m */,
+				A05648291DCAE7C900448E70 /* SESelectionGrabber.h */,
+				A056482A1DCAE7C900448E70 /* SESelectionGrabber.m */,
+				A056482B1DCAE7C900448E70 /* SETextAttachment.h */,
+				A056482C1DCAE7C900448E70 /* SETextAttachment.m */,
+				A056482D1DCAE7C900448E70 /* SETextEditingCaret.h */,
+				A056482E1DCAE7C900448E70 /* SETextEditingCaret.m */,
+				A056482F1DCAE7C900448E70 /* SETextGeometry.h */,
+				A05648301DCAE7C900448E70 /* SETextGeometry.m */,
+				A05648311DCAE7C900448E70 /* SETextInput.h */,
+				A05648321DCAE7C900448E70 /* SETextInput.m */,
+				A05648331DCAE7C900448E70 /* SETextLayout.h */,
+				A05648341DCAE7C900448E70 /* SETextLayout.m */,
+				A05648351DCAE7C900448E70 /* SETextMagnifierCaret.h */,
+				A05648361DCAE7C900448E70 /* SETextMagnifierCaret.m */,
+				A05648371DCAE7C900448E70 /* SETextMagnifierRanged.h */,
+				A05648381DCAE7C900448E70 /* SETextMagnifierRanged.m */,
+				A05648391DCAE7C900448E70 /* SETextSelection.h */,
+				A056483A1DCAE7C900448E70 /* SETextSelection.m */,
+				A056483B1DCAE7C900448E70 /* SETextSelectionView.h */,
+				A056483C1DCAE7C900448E70 /* SETextSelectionView.m */,
+				A056483D1DCAE7C900448E70 /* SETextView.h */,
+				A056483E1DCAE7C900448E70 /* SETextView.m */,
+			);
+			path = SECoreTextView;
+			sourceTree = "<group>";
+		};
+		A056485E1DCAEDCA00448E70 /* XHImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A056486B1DCB111600448E70 /* XHImageViewer.h */,
+				A056486C1DCB111600448E70 /* XHImageViewer.m */,
+				A05648611DCAEDCA00448E70 /* XHViewState.h */,
+				A05648621DCAEDCA00448E70 /* XHViewState.m */,
+				A05648631DCAEDCA00448E70 /* XHZoomingImageView.h */,
+				A05648641DCAEDCA00448E70 /* XHZoomingImageView.m */,
+			);
+			path = XHImageViewer;
+			sourceTree = "<group>";
+		};
+		A056486E1DCB1ABE00448E70 /* AlbumRichTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F609021DC9DEA70001AC4F /* AlbumRichTextView.h */,
+				A0F609031DC9DEA70001AC4F /* AlbumRichTextView.m */,
+				A05648541DCAEB7F00448E70 /* BaseCollectionViewCell.h */,
+				A05648551DCAEB7F00448E70 /* BaseCollectionViewCell.m */,
+				A05648571DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.h */,
+				A05648581DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.m */,
+				A05648681DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.h */,
+				A05648691DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.m */,
+				A056484E1DCAE8C500448E70 /* MessageAvatarFactory.h */,
+				A056484F1DCAE8C500448E70 /* MessageAvatarFactory.m */,
+				A05648511DCAE94500448E70 /* UIImage+Rounded.h */,
+				A05648521DCAE94500448E70 /* UIImage+Rounded.m */,
+				A05647EC1DCACBBB00448E70 /* AlbumLikesCommentsView.h */,
+				A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */,
+				A0F608FF1DC9C2920001AC4F /* Album.h */,
+				A0F609001DC9C2920001AC4F /* Album.m */,
+			);
+			name = AlbumRichTextView;
+			sourceTree = "<group>";
+		};
+		A05648721DCB1BCD00448E70 /* SendMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				A056486F1DCB1B1D00448E70 /* SendMessageView.h */,
+				A05648701DCB1B1D00448E70 /* SendMessageView.m */,
+			);
+			name = SendMessageView;
+			sourceTree = "<group>";
+		};
 		A0781F581DC9846E00E07B2A /* AlbumOperationView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,18 +325,20 @@
 		A09D4A2A1DC73AB700DFD3A8 /* CircleOfFriends */ = {
 			isa = PBXGroup;
 			children = (
+				A056485E1DCAEDCA00448E70 /* XHImageViewer */,
+				A05648201DCAE7C900448E70 /* SECoreTextView */,
 				A09D4A2E1DC73AB800DFD3A8 /* AppDelegate.h */,
 				A09D4A2F1DC73AB800DFD3A8 /* AppDelegate.m */,
 				A09D4A311DC73AB900DFD3A8 /* ViewController.h */,
 				A09D4A321DC73AB900DFD3A8 /* ViewController.m */,
 				A0F1CA3E1DC83B2F00FA4BE6 /* CircleOfFriendsViewController.h */,
 				A0F1CA3F1DC83B2F00FA4BE6 /* CircleOfFriendsViewController.m */,
+				A05648731DCB2A7700448E70 /* StoreManager.h */,
+				A05648741DCB2A7700448E70 /* StoreManager.m */,
 				A0F608FC1DC9BDE20001AC4F /* CircleTableViewCell.h */,
 				A0F608FD1DC9BDE20001AC4F /* CircleTableViewCell.m */,
-				A0F609021DC9DEA70001AC4F /* AlbumRichTextView.h */,
-				A0F609031DC9DEA70001AC4F /* AlbumRichTextView.m */,
-				A0F608FF1DC9C2920001AC4F /* Album.h */,
-				A0F609001DC9C2920001AC4F /* Album.m */,
+				A05648721DCB1BCD00448E70 /* SendMessageView */,
+				A056486E1DCB1ABE00448E70 /* AlbumRichTextView */,
 				A0781F581DC9846E00E07B2A /* AlbumOperationView */,
 				A0F1CA541DC8935A00FA4BE6 /* PhotographyHelper */,
 				A0F1CA501DC8913900FA4BE6 /* TopPathCover */,
@@ -191,6 +357,8 @@
 		A09D4A2B1DC73AB800DFD3A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A05647F11DCACFF900448E70 /* Album_likes_comments_background@2x.png */,
+				A05647EF1DCACFE000448E70 /* Album_like_icon@2x.png */,
 				A0F1CA4E1DC87E6100FA4BE6 /* avatar.png */,
 				A0F1CA4C1DC87DB800FA4BE6 /* zgr.png */,
 				A09D4A631DC7486900DFD3A8 /* ff_IconBottle@2x.png */,
@@ -353,6 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05647F01DCACFE000448E70 /* Album_like_icon@2x.png in Resources */,
 				A09D4A6C1DC7486900DFD3A8 /* ff_IconShake@2x.png in Resources */,
 				A09D4A3B1DC73ABA00DFD3A8 /* LaunchScreen.storyboard in Resources */,
 				A0F1CA4F1DC87E6100FA4BE6 /* avatar.png in Resources */,
@@ -365,6 +534,7 @@
 				A09D4A621DC7449300DFD3A8 /* CustomCell.xib in Resources */,
 				A0F1CA4D1DC87DB800FA4BE6 /* zgr.png in Resources */,
 				A09D4A361DC73AB900DFD3A8 /* Main.storyboard in Resources */,
+				A05647F21DCACFF900448E70 /* Album_likes_comments_background@2x.png in Resources */,
 				A09D4A691DC7486900DFD3A8 /* ff_IconBottle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,18 +560,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05648751DCB2A7700448E70 /* StoreManager.m in Sources */,
+				A05648671DCAEDCA00448E70 /* XHZoomingImageView.m in Sources */,
+				A05648411DCAE7C900448E70 /* SELineLayout.m in Sources */,
 				A0F1CA531DC8916400FA4BE6 /* PhotographyHelper.m in Sources */,
 				A0F1CA431DC86E9600FA4BE6 /* TopPathCover.m in Sources */,
 				A09D4A331DC73AB900DFD3A8 /* ViewController.m in Sources */,
+				A056486D1DCB111600448E70 /* XHImageViewer.m in Sources */,
+				A05648711DCB1B1D00448E70 /* SendMessageView.m in Sources */,
+				A056483F1DCAE7C900448E70 /* SECompatibility.m in Sources */,
 				A0F609011DC9C2920001AC4F /* Album.m in Sources */,
+				A05648431DCAE7C900448E70 /* SESelectionGrabber.m in Sources */,
+				A056486A1DCB0D9200448E70 /* AlbumCollectionViewFlowLayout.m in Sources */,
+				A05648661DCAEDCA00448E70 /* XHViewState.m in Sources */,
 				A09D4A301DC73AB800DFD3A8 /* AppDelegate.m in Sources */,
 				A0F609041DC9DEA70001AC4F /* AlbumRichTextView.m in Sources */,
 				A0781F571DC9846200E07B2A /* AlbumOperationView.m in Sources */,
+				A056484B1DCAE7C900448E70 /* SETextSelection.m in Sources */,
+				A05648461DCAE7C900448E70 /* SETextGeometry.m in Sources */,
+				A05648491DCAE7C900448E70 /* SETextMagnifierCaret.m in Sources */,
 				A0F1CA461DC871B900FA4BE6 /* WaterDropRefresh.m in Sources */,
+				A05648481DCAE7C900448E70 /* SETextLayout.m in Sources */,
 				A0F1CA401DC83B2F00FA4BE6 /* CircleOfFriendsViewController.m in Sources */,
+				A05648591DCAEBA900448E70 /* AlbumPhotoCollectionViewCell.m in Sources */,
 				A0F1CA491DC8731900FA4BE6 /* SoundManager.m in Sources */,
+				A056484A1DCAE7C900448E70 /* SETextMagnifierRanged.m in Sources */,
+				A056484C1DCAE7C900448E70 /* SETextSelectionView.m in Sources */,
+				A05648531DCAE94500448E70 /* UIImage+Rounded.m in Sources */,
 				A09D4A611DC7449300DFD3A8 /* CustomCell.m in Sources */,
+				A05648561DCAEB7F00448E70 /* BaseCollectionViewCell.m in Sources */,
+				A05647EE1DCACBBB00448E70 /* AlbumLikesCommentsView.m in Sources */,
+				A056484D1DCAE7C900448E70 /* SETextView.m in Sources */,
+				A05648441DCAE7C900448E70 /* SETextAttachment.m in Sources */,
+				A05648501DCAE8C500448E70 /* MessageAvatarFactory.m in Sources */,
+				A05648421DCAE7C900448E70 /* SELinkText.m in Sources */,
+				A05648401DCAE7C900448E70 /* SEConstants.m in Sources */,
 				A0F608FE1DC9BDE20001AC4F /* CircleTableViewCell.m in Sources */,
+				A05648471DCAE7C900448E70 /* SETextInput.m in Sources */,
+				A05648451DCAE7C900448E70 /* SETextEditingCaret.m in Sources */,
 				A09D4A2D1DC73AB800DFD3A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

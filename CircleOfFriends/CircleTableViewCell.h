@@ -22,7 +22,7 @@
 @property (nonatomic,assign)id<CircleTableViewCellDelegate>circleCellDelegate;
 @property (nonatomic,strong)NSIndexPath *indexPath;
 
-@property (nonatomic,strong)Album *album;
+@property (nonatomic,strong)Album *currentAlbum;
 
 + (CGFloat)calculateCellHeightWithAlbum:(Album *)currentAlbum;
 

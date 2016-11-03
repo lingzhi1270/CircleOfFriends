@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger,AlbumOperationType){
     
 };
 
-typedef void(^DidSelectedOperationBlock)(AlbumOperationType *operationType);
+typedef void(^DidSelectedOperationBlock)(AlbumOperationType operationType);
 
 @interface AlbumOperationView : UIView
 

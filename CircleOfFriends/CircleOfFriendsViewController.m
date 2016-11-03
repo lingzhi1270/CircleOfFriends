@@ -10,13 +10,20 @@
 #import "TopPathCover.h"
 #import "PhotographyHelper.h"
 #import "AlbumOperationView.h"
+#import "SendMessageView.h"
+#import "CircleTableViewCell.h"
+#import "StoreManager.h"
+#import "Album.h"
 
 
 #define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
-@interface CircleOfFriendsViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface CircleOfFriendsViewController ()<UITableViewDelegate,UITableViewDataSource,CircleTableViewCellDelegate,UITextFieldDelegate,SendMessageViewDelegate>
 
 @property (nonatomic,strong)UITableView *circleTab;
+
+@property (nonatomic,strong)NSMutableArray *dataArray;
 
 /*
  * 视觉差的TableViewHeaderView
@@ -29,12 +36,27 @@
 //评论
 @property(nonatomic,strong)AlbumOperationView *albumOperationView;
 
+//sendView
+@property (nonatomic,strong)SendMessageView *sendMessageView;
+
+@property (nonatomic,strong)NSIndexPath *selectedIndexPath;
 
 @end
 
 @implementation CircleOfFriendsViewController
 
 #pragma mark- getter
+
+- (NSMutableArray *)dataArray
+{
+    if (_dataArray == nil) {
+        _dataArray = [[NSMutableArray alloc] init];
+        
+        
+    }
+    return _dataArray;
+}
+
 - (TopPathCover *)albumHeaderContainerViewPathCover
 {
     if (_albumHeaderContainerViewPathCover == nil) {
@@ -50,6 +72,9 @@
         WEAKSELF
         //手动刷新
         [_albumHeaderContainerViewPathCover setHandleRefreshEvent:^{
+            
+            //reloadData
+            [weakSelf loadDataSource];
             
         }];
         
@@ -94,17 +119,38 @@
     if (_albumOperationView == nil) {
         _albumOperationView  = [AlbumOperationView initailzerAlbumOperationView];
         WEAKSELF
-        _albumOperationView.didSelectedOperationCompleted = ^(AlbumOperationType *operationType){
-            
-            
-            
-            
+        _albumOperationView.didSelectedOperationCompleted = ^(AlbumOperationType operationType){
+        STRONGSELF
+            switch (operationType) {
+                case AlbumOperationTypeLike:{
+                   [strongSelf addLike];
+                }
+                    break;
+                case AlbumOperationTypeReply:
+                {
+                    [strongSelf.sendMessageView becomeFirstResponderForTextField];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        
             
         };
         
         
     }
     return _albumOperationView;
+}
+
+- (SendMessageView *)sendMessageView
+{
+    if (_sendMessageView == nil) {
+        _sendMessageView = [[SendMessageView alloc] initWithFrame:CGRectZero];
+        _sendMessageView.sendMessageDelegate = self;
+    }
+    return _sendMessageView;
 }
 
 
@@ -135,24 +181,78 @@
     
     self.circleTab.tableHeaderView = self.albumHeaderContainerViewPathCover;
     
+    [self loadDataSource];
+    
 }
 
 #pragma mark- UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 100;
+    return self.dataArray.count;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL"];
+    CircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CircleTableViewCell"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CELL"];
+        cell = [[CircleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CircleTableViewCell"];
+        cell.circleCellDelegate = self;
     }
-    
+    if (indexPath.row < self.dataArray.count) {
+        cell.indexPath = indexPath;
+        cell.currentAlbum = self.dataArray[indexPath.row];
+    }
+
     return cell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [CircleTableViewCell calculateCellHeightWithAlbum:self.dataArray[indexPath.row]];
+}
+
+#pragma mark - DataSource
+- (void)loadDataSource
+{
+    WEAKSELF
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
+        
+        //获取数据
+     NSMutableArray *dataArray = [[StoreManager shareStoreManager] getAlbumConfigureArray];
+        
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+           
+            [weakSelf.albumHeaderContainerViewPathCover stopRefresh];
+            weakSelf.dataArray = dataArray;
+            //刷新表
+            [weakSelf.circleTab reloadData];
+            
+        });
+        
+    });
+    
+    
+    
+}
+
+
+#pragma mark - SendMessageView Delegate
+- (void)addLike
+{
+    
+}
+
+#pragma mark - CircleTableViewCellDelegate
+- (void)didShowOperationView:(UIButton *)sender indexPath:(NSIndexPath *)indexPath
+{
+
+    
+    
+
+}
+
 
 #pragma mark- UIScrollView Delegate
 
@@ -169,14 +269,16 @@
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-//    [self.operationView dismiss];
-//    
-//    [self.sendMessageView resignFirstResponderForInputTextFields];
-//    
-//    self.selectedIndexPath = nil;
+  
+    [self.albumOperationView dismiss];
+    
+    [self.sendMessageView resignFirstResponderForInputTextFields];
+   
+    self.selectedIndexPath = nil;
     
     [_albumHeaderContainerViewPathCover scrollViewWillBeginDragging:scrollView];
 }
+
 
 
 - (void)dealloc
