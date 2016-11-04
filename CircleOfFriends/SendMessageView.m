@@ -63,6 +63,7 @@
 - (void)finishSendMessage {
     self.inputTextField.text = nil;
     [self resignFirstResponderForInputTextFields];
+  
 }
 
 #pragma mark - Propertys
@@ -100,9 +101,9 @@
     // 发送文字
     if ([self.sendMessageDelegate respondsToSelector:@selector(didSendMessage:albumInputView:)]) {
         [self.sendMessageDelegate didSendMessage:textField.text albumInputView:self];
+        
     }
     return YES;
 }
-
 
 @end

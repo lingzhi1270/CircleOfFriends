@@ -183,9 +183,20 @@
     
     self.circleTab.tableHeaderView = self.albumHeaderContainerViewPathCover;
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hidenKeyboard)];
+    [self.circleTab addGestureRecognizer:tapGesture];
+    
     [self loadDataSource];
     
 }
+
+- (void)hidenKeyboard
+{
+
+    [self.sendMessageView finishSendMessage];
+    
+}
+
 
 #pragma mark- UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -238,15 +249,41 @@
 
 
 #pragma mark - SendMessageView Delegate
+- (void)didSendMessage:(NSString *)message albumInputView:(SendMessageView *)sendMessageView
+{
+    if (self.selectedIndexPath && self.selectedIndexPath.row < self.dataArray.count)
+    {
+        Album *updateCurrentAlbum = self.dataArray[self.selectedIndexPath.row];
+        NSMutableArray *comments = [[NSMutableArray alloc] initWithArray:updateCurrentAlbum.albumShareComments];
+        [comments insertObject:message atIndex:0];
+        updateCurrentAlbum.albumShareComments = comments;
+        [self.circleTab reloadRowsAtIndexPaths:@[self.selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+    
+        //失去第一相应
+        [sendMessageView finishSendMessage];
+//        [self.view endEditing:YES];
+    }
+
+}
+
 - (void)addLike
 {
-    
+    if (self.selectedIndexPath && self.selectedIndexPath.row < self.dataArray.count)
+    {
+        Album *updateCyrrentAlbum = self.dataArray[self.selectedIndexPath.row];
+        
+        NSMutableArray *likes = [[NSMutableArray alloc] initWithArray:updateCyrrentAlbum.albumShareLikes];
+        [likes insertObject:@"Leslie" atIndex:0];
+        updateCyrrentAlbum.albumShareLikes = likes;
+        [self.circleTab reloadRowsAtIndexPaths:@[self.selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+        
+    }
 }
 
 #pragma mark - CircleTableViewCellDelegate
 - (void)didShowOperationView:(UIButton *)sender indexPath:(NSIndexPath *)indexPath
 {
-    //rectForRowAtIndexPath:
+    //rectForRowAtIndexPath:  获取不同cell在表上的rect
     CGRect rectInTableView = [self.circleTab rectForRowAtIndexPath:indexPath];
     CGFloat origin_Y = rectInTableView.origin.y + sender.frame.origin.y;
 
