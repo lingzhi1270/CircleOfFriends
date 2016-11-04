@@ -25,6 +25,10 @@
         [self addSubview:self.textField];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+        
+        
+        
+        
     }
     return self;
 }
@@ -36,6 +40,7 @@
 - (void)keyboardDidShow:(NSNotification *)nitification {
     [self becomeFirstResponderForInputTextField];
 }
+
 
 #pragma mark - 公开方法
 

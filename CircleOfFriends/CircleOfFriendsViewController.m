@@ -259,9 +259,8 @@
         updateCurrentAlbum.albumShareComments = comments;
         [self.circleTab reloadRowsAtIndexPaths:@[self.selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
     
-        //失去第一相应
+        //失去第一响应
         [sendMessageView finishSendMessage];
-//        [self.view endEditing:YES];
     }
 
 }

@@ -68,7 +68,7 @@
 
 - (UILabel *)userNameLabel {
     if (!_userNameLabel) {
-        _userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(4, 0, 22, 16)];
+        _userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(4, 0, 30, 16)];
         _userNameLabel.textColor = [UIColor blueColor];
         _userNameLabel.font = [UIFont systemFontOfSize:10];
     }
