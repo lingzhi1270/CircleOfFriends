@@ -272,9 +272,19 @@
         Album *updateCyrrentAlbum = self.dataArray[self.selectedIndexPath.row];
         
         NSMutableArray *likes = [[NSMutableArray alloc] initWithArray:updateCyrrentAlbum.albumShareLikes];
-        [likes insertObject:@"Leslie" atIndex:0];
-        updateCyrrentAlbum.albumShareLikes = likes;
-        [self.circleTab reloadRowsAtIndexPaths:@[self.selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+        //先判断用户有没有点赞
+        if (![likes containsObject:@"Leslie"])
+        {
+            [likes addObject:@"Leslie"];
+            updateCyrrentAlbum.albumShareLikes = likes;
+            [self.circleTab reloadRowsAtIndexPaths:@[self.selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+        }
+        else
+        {
+            //
+            return;
+        }
+       
         
     }
 }

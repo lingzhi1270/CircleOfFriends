@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02C8D561DD0288C00C9A25E /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A02C8D551DD0288C00C9A25E /* NSString+Extension.m */; };
 		A05647EE1DCACBBB00448E70 /* AlbumLikesCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */; };
 		A05647F01DCACFE000448E70 /* Album_like_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A05647EF1DCACFE000448E70 /* Album_like_icon@2x.png */; };
 		A05647F21DCACFF900448E70 /* Album_likes_comments_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A05647F11DCACFF900448E70 /* Album_likes_comments_background@2x.png */; };
@@ -85,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A02C8D541DD0288C00C9A25E /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		A02C8D551DD0288C00C9A25E /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		A05647EC1DCACBBB00448E70 /* AlbumLikesCommentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumLikesCommentsView.h; sourceTree = "<group>"; };
 		A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumLikesCommentsView.m; sourceTree = "<group>"; };
 		A05647EF1DCACFE000448E70 /* Album_like_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Album_like_icon@2x.png"; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				A05648521DCAE94500448E70 /* UIImage+Rounded.m */,
 				A05647EC1DCACBBB00448E70 /* AlbumLikesCommentsView.h */,
 				A05647ED1DCACBBB00448E70 /* AlbumLikesCommentsView.m */,
+				A02C8D541DD0288C00C9A25E /* NSString+Extension.h */,
+				A02C8D551DD0288C00C9A25E /* NSString+Extension.m */,
 				A0F608FF1DC9C2920001AC4F /* Album.h */,
 				A0F609001DC9C2920001AC4F /* Album.m */,
 			);
@@ -583,6 +588,7 @@
 				A05648661DCAEDCA00448E70 /* XHViewState.m in Sources */,
 				A09D4A301DC73AB800DFD3A8 /* AppDelegate.m in Sources */,
 				A0F609041DC9DEA70001AC4F /* AlbumRichTextView.m in Sources */,
+				A02C8D561DD0288C00C9A25E /* NSString+Extension.m in Sources */,
 				A0781F571DC9846200E07B2A /* AlbumOperationView.m in Sources */,
 				A056484B1DCAE7C900448E70 /* SETextSelection.m in Sources */,
 				A05648461DCAE7C900448E70 /* SETextGeometry.m in Sources */,

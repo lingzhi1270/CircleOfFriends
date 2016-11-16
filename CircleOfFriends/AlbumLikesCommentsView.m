@@ -7,9 +7,12 @@
 //
 
 #import "AlbumLikesCommentsView.h"
+#import "NSString+Extension.h"
+
 #define AlbumLikeLabelBaseTag 100
 
 @interface AlbumCommentTableViewCell : UITableViewCell
+
 
 @property (nonatomic, strong) UILabel *userNameLabel;
 
@@ -89,6 +92,10 @@
 
 
 @interface AlbumLikesCommentsView ()<UITableViewDelegate,UITableViewDataSource>
+{
+
+        NSInteger likeLabelWith_X;
+}
 
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 
@@ -203,7 +210,21 @@
     }
     CGRect likeLabelFrame = CGRectZero;
     for (int i = 0; i < self.likes.count; i ++) {
-        likeLabelFrame = CGRectMake(CGRectGetMaxX(self.likeIconImageView.frame) + i * 30 + 5, CGRectGetMinY(self.likeIconImageView.frame), 30, CGRectGetHeight(self.likeIconImageView.bounds));
+        //TODO:赞的人显示Label
+        
+        
+        CGFloat likeLabelH = CGRectGetHeight(self.likeIconImageView.bounds);
+        
+        
+        
+        NSString *likeLabelText = [NSString stringWithFormat:@"%@%@", self.likes[i], (i == self.likes.count - 1) ? @"" : @","];;
+        //自适应宽度
+        NSInteger likeLabelW = [likeLabelText sizeWithFont:[UIFont systemFontOfSize:10] maxH:likeLabelH].width;
+        
+    
+        
+        likeLabelFrame = CGRectMake(CGRectGetMaxX(self.likeIconImageView.frame) + likeLabelWith_X, CGRectGetMinY(self.likeIconImageView.frame), likeLabelW+5, CGRectGetHeight(self.likeIconImageView.bounds));
+        likeLabelWith_X += likeLabelW;
         
         UILabel *likeLabel = (UILabel *)[self.likeContainerView viewWithTag:AlbumLikeLabelBaseTag + i];
         if (!likeLabel) {
@@ -212,7 +233,7 @@
         likeLabel.hidden = NO;
         likeLabel.font = [UIFont systemFontOfSize:10];
         likeLabel.textColor = [UIColor blueColor];
-        likeLabel.text = [NSString stringWithFormat:@"%@%@", self.likes[i], (i == self.likes.count - 1) ? @"" : @","];
+        likeLabel.text = likeLabelText;
         [self.likeContainerView addSubview:likeLabel];
     }
 }

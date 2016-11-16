@@ -24,7 +24,7 @@
 
 @interface Album : NSObject
 
-@property (nonatomic,copy)NSString *userName;
+@property (nonatomic, copy)NSString *userName;
 
 @property (nonatomic, copy) NSString *profileAvatarUrlString;
 
